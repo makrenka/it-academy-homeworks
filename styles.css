@@ -1,5 +1,25 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
 #pole_size {
     width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
 }
 
 table {
@@ -9,7 +29,10 @@ table {
 th {
     text-align: center;
     padding: 15px;
-    background-color: blue;
+    background-color: #add8e6;
+    font-weight: 700;
+    font-size: 23px;    
+    color: #0000ff;
 }
 
 ul {
@@ -19,7 +42,7 @@ ul {
 
 .sidebar {
     width: 150px;
-    background-color: yellow;
+    background-color: #f0e68c;
     vertical-align: top;
 }
 
@@ -28,7 +51,8 @@ ul {
 }
 
 .content {
-    padding: 0 20px 20px 20px;
+    padding: 0 15px 15px 20px;
+    background: url('./images/ball.png') repeat-y right top;
 }
 
 .h3-content {
@@ -38,4 +62,12 @@ ul {
 .image-cup {
     float: left;
     margin: 0 20px 20px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #add8e6;
+    font-size: 23px;    
+    color: #0000ff;
 }
