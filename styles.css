@@ -1,3 +1,7 @@
+#pole_size {
+    width: 100%;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -14,8 +18,9 @@ ul {
 }
 
 .sidebar {
-    width: 200px;
+    width: 150px;
     background-color: yellow;
+    vertical-align: top;
 }
 
 .h3-sidebar {
@@ -23,5 +28,14 @@ ul {
 }
 
 .content {
-    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+
+.h3-content {
+    text-align: center;
+}
+
+.image-cup {
+    float: left;
+    margin: 0 20px 20px 0;
 }
