@@ -31,7 +31,7 @@ body {
     background: url('./images/background-sidebar.png') repeat-y left top;    
 }
 
-.wrapper-for-ball-background {
+.content {
     background: url('./images/ball.png') repeat-y right top;
 }
 
@@ -50,12 +50,12 @@ body {
     padding-left: 10px;
 }
 
-.content {
+.main {
     margin-left: 150px;
     padding: 0 15px 15px 20px;    
 }
 
-.h3-content {
+.h3-main {
     text-align: center;
     margin-top: 0;
     padding-top: 18px;
