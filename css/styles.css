@@ -60,7 +60,29 @@ unnecessary list markers, it becomes possible to set the same width of links. */
 made by setting the border-right property on li. Advantages - elements are arranged horizontally, it becomes 
 possible to set the same width of links, gaps between links disappear. Disadvantages - that we need to 
 additionally remove the list markers, the height of the ul container block becomes zero, we need to add 
-{overflow: hidden;} for ul */
+{overflow: hidden;} for ul, besides, if this is not done, the next element will become one line with the menu. */
+
+.links-flex ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.links-flex li {
+    border-right: solid red 3px;
+    width: 140px;
+    text-align: center;
+}
+
+.links-flex a {
+    display: block;
+    color: green;
+    padding: 5px 10px 10px 10px;
+    background-color: beige;
+}
+
+/* Links are laid out in a line by setting the li display property to flex , the separators are made
+setting the border-right property of li. Advantages - elements are arranged horizontally, it becomes 
+possible to set the same width of links without gaps between them and the disadvantages of floating elements. */
 
 a:hover {
     color: red;
