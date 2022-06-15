@@ -50,12 +50,12 @@ ul {
     padding-left: 10px;
 }
 
-.content {
+.main {
     padding: 0 15px 15px 20px;
     background: url('./images/ball.png') repeat-y right top;
 }
 
-.h3-content {
+.h3-main {
     text-align: center;
 }
 
