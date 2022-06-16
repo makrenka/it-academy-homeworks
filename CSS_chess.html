@@ -66,10 +66,17 @@
       color: blue;
     }
 
-    
+    a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+
+    a:first-of-type::before { 
+      content: url('./images/extref.png') }
   </style>
 
-  <table class='CHESS'>
+  <table class='CHESS' id="begin">
     <tr>
       <td></td>
       <td></td>
@@ -209,7 +216,7 @@
     Каспаров на той же пресс-конференции обвинил Кампоманеса, что тот решил прервать матч только тогда, когда претендент
     получил шансы на победу.</i></p>
     <br>
-  <a href="/">в начало страницы</a> 
+  <a href="#begin">в начало страницы</a> 
 </body>
 
 </html>
