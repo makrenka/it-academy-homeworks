@@ -72,14 +72,24 @@
       font-weight: bold;
     }
 
-    .star {
+    .wrapper {
+      overflow: hidden;
+    }
+
+    .star0 {
+      overflow: hidden;
+      float: left;
+    }
+
+    .star1 {
       background: url('./images/star0.png');
       width: 78px;
       height: 78px;
-      display: inline-block;
+      float: right;
     }
 
-    .star:hover {
+    .star0 .star1:hover,
+    .star0 .star1:hover~.star1 {
       background: url('./images/star1.png');
     }
   </style>
@@ -226,11 +236,15 @@
       Каспаров на той же пресс-конференции обвинил Кампоманеса, что тот решил прервать матч только тогда, когда
       претендент
       получил шансы на победу.</i></p>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
+  <div class="wrapper">
+    <div class="star0">
+      <div class="star1"></div>
+      <div class="star1"></div>
+      <div class="star1"></div>
+      <div class="star1"></div>
+      <div class="star1"></div>
+    </div>
+  </div>
   <br>
   <a href="#begin">в начало страницы</a>
 </body>
