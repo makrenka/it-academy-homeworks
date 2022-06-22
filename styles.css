@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.header {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #add8e6;
+    font-weight: 700;
+    font-size: 23px;    
+    color: #0000ff;
+}
+
+.wrapper {    
+    background: url('./images/background-sidebar.png') repeat-y left top;    
+}
+
+.content {
+    background: url('./images/ball.png') repeat-y right top;
+}
+
+.sidebar {
+    width: 150px;
+    float: left;
+    
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0 20px 15px 30px;
+}
+
+.sidebar h3 {
+    padding-left: 10px;
+}
+
+.main {
+    margin-left: 150px;
+    padding: 0 15px 15px 20px;    
+}
+
+.h3-main {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 18px;
+}
+
+.image-cup {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #add8e6;
+    font-size: 23px;    
+    color: #0000ff;
+} 
