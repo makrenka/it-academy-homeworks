@@ -34,7 +34,12 @@
             </aside>
             <main class="main">
                 <h3 class="h3-main">ФУТБОЛ</h3>
-                <img src="./images/cup.png" alt="Cup" class="image-cup">
+                <picture class="image-cup">
+                    <source media="(max-width: 320px)" srcset="./images/cup.png">
+                    <source media="(max-width: 768px)" srcset="./images/cup.png">
+                    <source media="(max-width: 1440px)" srcset="./images/cup.png">
+                    <img src='./images/cup.png' alt='cup'>
+                </picture>                
                 <p>
                     Футбо́л — командный вид спорта, в котором целью является забить мяч в ворота соперника
                     ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника.
