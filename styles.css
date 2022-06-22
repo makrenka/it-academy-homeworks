@@ -18,6 +18,16 @@ body {
     font-size: 15px;
 }
 
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
 .header {
     text-align: center;
     padding: 15px 0;
@@ -27,18 +37,13 @@ body {
     color: #0000ff;
 }
 
-.wrapper {    
-    background: url('./images/background-sidebar.png') repeat-y left top;    
-}
-
 .content {
     background: url('./images/ball.png') repeat-y right top;
 }
 
 .sidebar {
-    width: 150px;
-    float: left;
-    
+    flex-basis: 150px;
+    background-color: #f0e78d;
 }
 
 .sidebar ul {
@@ -50,8 +55,7 @@ body {
     padding-left: 10px;
 }
 
-.main {
-    margin-left: 150px;
+.main {    
     padding: 0 15px 15px 20px;    
 }
 
