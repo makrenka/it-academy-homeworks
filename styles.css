@@ -23,11 +23,6 @@ body {
     flex-direction: column;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-}
-
 .header {
     text-align: center;
     padding: 15px 0;
@@ -38,6 +33,8 @@ body {
 }
 
 .content {
+    display: flex;
+    flex-direction: row;
     background: url('./images/ball.png') repeat-y right top;
 }
 
@@ -78,7 +75,7 @@ body {
     color: #0000ff;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 490px) {
     .header {
         display: none;
     }
@@ -109,11 +106,9 @@ body {
     }
 
     .image-cup {
-        float: none;
-    }
-
-    .image-cup__img {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        float: none;        
     }
 
     .sidebar h3 {
