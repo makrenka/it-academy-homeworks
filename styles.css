@@ -56,13 +56,13 @@ body {
     padding: 0 15px 15px 20px;
 }
 
-.h3-main {
+.main-h3 {
     text-align: center;
     margin-top: 0;
     padding-top: 18px;
 }
 
-.image-cup {
+.main-image {
     float: left;
     margin: 0 20px 20px 0;
 }
@@ -73,6 +73,27 @@ body {
     background-color: #add8e6;
     font-size: 23px;
     color: #0000ff;
+}
+
+.main-fixed-el {
+    width: 120px;
+    height: 60px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #90ee90;
+    border: solid green 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-fixed-el a {
+    font-size: 14px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 490px) {
@@ -101,11 +122,11 @@ body {
         padding-bottom: 0;
     }
 
-    .h3-main {
+    .main-h3 {
         padding-top: 5px;
     }
 
-    .image-cup {
+    .main-image {
         display: flex;
         justify-content: center;
         float: none;        
