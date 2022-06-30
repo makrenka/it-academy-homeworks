@@ -1,0 +1,93 @@
+@keyframes MyAnimation1 {
+    from {
+        background: url(./images/countdown.jpg) 0 0;
+    }
+
+    to {
+        background: url(./images/countdown.jpg) -360px 0;
+    }
+}
+
+@keyframes MyAnimation2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes MyAnimation3 {
+    0% {
+        transform: translate(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(376.8px) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0px) rotate(0deg);
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.countdown {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    animation: MyAnimation1 3s steps(3) infinite;
+}
+
+.heart {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+}
+
+.wrapper:hover .heart {
+    animation: MyAnimation2 2s infinite;
+}
+
+.yin-yang {    
+    height: 120px;
+}
+
+.yin-yang__img {
+    border-radius: 50%;
+}
+
+.wrapper:hover .yin-yang__img {
+    animation: MyAnimation3 3s infinite;
+}
+
+.border {
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 80px;
+    margin-left: 420px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.border__text {           
+    font-size: 30px;              
+    margin-top: 0;
+    margin-bottom: 0;
+}
