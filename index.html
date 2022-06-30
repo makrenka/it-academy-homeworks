@@ -15,17 +15,17 @@
             sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw" src="./images/flag.png" alt="flag">
     </div>
 
-    <!-- Размещение на странице изображения с помощью тега <img>
-    Достоинства:
-    1. Позволяет встроить в документ файл с изображением.
-    2. Поддерживает форматы изображений jpeg, gif, png, svg, bmp, bmp ico, png ico.
-    3. Задаёт текстовое описание изображения для неграфических браузеров.
-    4. Есть возможность улучшить производительность загрузки страницы с помощью атрибута loading.
-    5. Есть возможность показывать изображения разных размеров при изменении разрешения.
-    Недостатки:
-    1. Не решается проблема ориентации графики, показа альбомной, портретной или иной версии изображения при изменении
-    размеров экрана.
-    2. Не используется с частично поддерживаемыми типами изображений. -->
+    <!-- Placing an image on a page using the <img> tag
+    Advantages:
+    1. Allows you to embed an image file into a document.
+    2. Supports jpeg, gif, png, svg, bmp, bmp ico, png ico image formats.
+    3. Sets a textual description of the image for non-graphical browsers.
+    4. It is possible to improve page loading performance by using the loading attribute.
+    5. It is possible to show images of different sizes when the resolution is changed.
+    Flaws:
+    1. The problem of graphic orientation, displaying a landscape, portrait or other version of the image when changing is not solved
+    screen sizes.
+    2. Not used with partially supported image types. -->
 
     <picture>
         <source media="(orientation: landscape)" srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
@@ -35,36 +35,36 @@
         <img src="./images/flag.png" alt="flag">
     </picture>
 
-    <!-- Размещение на странице изображения с помощью тега <picture>
-    Достоинства: все достоинства размещения с тегом <img>, плюс:
-    1. Решается проблема ориентации графики, показа альбомной, портретной или иной версии изображения при изменении
-    размеров экрана.
-    2. Используется с частично поддерживаемыми типами изображений, напирмер webp и avif.
-    Недостатки:
-    1. Более сложная запись. При отсутствии необходимости адаптации изображения его использование неэффективно. -->
+    <!-- Placing an image on a page using the <picture> tag
+     Advantages: all the advantages of placing with the <img> tag, plus:
+     1. The problem of graphics orientation, displaying a landscape, portrait or other version of the image when changing is solved
+     screen sizes.
+     2. Used with partially supported image types, such as webp and avif.
+     Flaws:
+     1. More complex notation. If there is no need to adapt the image, its use is inefficient. -->
 
     <div class="object">
         <object data="./images/flag.png"></object>
     </div>
 
-    <!-- Размещение на странице изображения с помощью тега <object>
-    Достоинства: 
-    1. Универсальный способ внедрения в страницу мультимедийного контента.
-    2. Может содержать несколько элементов <param>, которые используются, чтобы определить параметры для плагинов, встроенных в элемент <object>.
-    Недостатки:
-    1. Не решается проблема адаптации.
-    2. Проблемы с безопасностью.
-    3. Большинство мобильных устройств больше не поддерживают такие плагины, и поддержка на компьютерах также уменьшается. -->
+    <!-- Placing an image on the page using the <object> tag
+     Advantages:
+     1. A universal way to embed multimedia content into a page.
+     2. May contain multiple <param> elements that are used to define parameters for plugins embedded within the <object> element.
+     Flaws:
+     1. The problem of adaptation is not solved.
+     2. Security issues.
+     3. Most mobile devices no longer support such plug-ins, and support on computers is also declining. -->
 
     <iframe src="./images/flag.png" frameborder="0" allowfullscreen width="450" height="300"></iframe>
 
-    <!-- Размещение на странице изображения с помощью тега <iframe>
-    Достоинства: 
-    1. Отлично подходит для включения стороннего контента на сайт, который, возможно, не имеет прямого контроля.
-    2. Поддерживается всеми браузерами.
-    Недостатки:
-    1. Не решается проблема адаптации.
-    2. Серьёзная проблема с безопасностью, поэтому с его помощью вставляется только сторонний контент и только тогда, когда это абсолютно необходимо. -->
+    <!-- Placing an image on a page using the <iframe> tag
+     Advantages:
+     1. Great for including third party content on a site that may not have direct control.
+     2. Supported by all browsers.
+     Flaws:
+     1. The problem of adaptation is not solved.
+     2. Serious security issue, so it only inserts third-party content and only when absolutely necessary. -->
 
 </body>
 
