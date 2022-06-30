@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <div>
-        <img src="./images/flag.png" alt="flag" width="450" height="300">
-    </div>    
+    <div class="img">
+        <img srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
+            sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw" src="./images/flag.png" alt="flag">
+    </div>
+
+    <!-- Размещение на странице изображения с помощью тега <img>
+    Достоинства:
+    1. Позволяет встроить в документ файл с изображением.
+    2. Поддерживает форматы изображений jpeg, gif, png, svg, bmp, bmp ico, png ico.
+    3. Задаёт текстовое описание изображения для неграфических браузеров.
+    4. Есть возможность улучшить производительность загрузки страницы с помощью атрибута loading.
+    5. Есть возможность показывать изображения разных размеров при изменении разрешения.
+    Недостатки:
+    1. Не решается проблема ориентации графики, показа альбомной, портретной или иной версии изображения при изменении
+    размеров экрана.
+    2. Не используется с частично поддерживаемыми типами изображений. -->
+
+    <div class="picture">
+        <picture>
+            <source media="(orientation: landscape)" srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
+                sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw">
+            <source media="(orientation: portrait)" srcset="./images/flag-300w.png 300w, ./images/flag-800w.png 800w"
+                sizes="(min-width: 880px) 800px, (min-width: 350px) 300px, 100vw">
+            <img src="./images/flag.png" alt="flag">
+        </picture>
+    </div>
+
+    <!-- Размещение на странице изображения с помощью тега <picture>
+    Достоинства: все достоинства размещения с тегом <img>, плюс:
+    1. Решается проблема ориентации графики, показа альбомной, портретной или иной версии изображения при изменении
+    размеров экрана.
+    2. Используется с частично поддерживаемыми типами изображений, напирмер webp и avif.
+    Недостатки:
+    1. Более сложная запись. При отсутствии необходимости адаптации изображения его использование неэффективно. -->
+
+    
 </body>
+
 </html>
