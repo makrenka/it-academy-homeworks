@@ -27,15 +27,13 @@
     размеров экрана.
     2. Не используется с частично поддерживаемыми типами изображений. -->
 
-    <div class="picture">
-        <picture>
-            <source media="(orientation: landscape)" srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
-                sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw">
-            <source media="(orientation: portrait)" srcset="./images/flag-300w.png 300w, ./images/flag-800w.png 800w"
-                sizes="(min-width: 880px) 800px, (min-width: 350px) 300px, 100vw">
-            <img src="./images/flag.png" alt="flag">
-        </picture>
-    </div>
+    <picture>
+        <source media="(orientation: landscape)" srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
+            sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw">
+        <source media="(orientation: portrait)" srcset="./images/flag-300w.png 300w, ./images/flag-800w.png 800w"
+            sizes="(min-width: 880px) 800px, (min-width: 350px) 300px, 100vw">
+        <img src="./images/flag.png" alt="flag">
+    </picture>
 
     <!-- Размещение на странице изображения с помощью тега <picture>
     Достоинства: все достоинства размещения с тегом <img>, плюс:
@@ -45,7 +43,29 @@
     Недостатки:
     1. Более сложная запись. При отсутствии необходимости адаптации изображения его использование неэффективно. -->
 
-    
+    <div class="object">
+        <object data="./images/flag.png"></object>
+    </div>
+
+    <!-- Размещение на странице изображения с помощью тега <object>
+    Достоинства: 
+    1. Универсальный способ внедрения в страницу мультимедийного контента.
+    2. Может содержать несколько элементов <param>, которые используются, чтобы определить параметры для плагинов, встроенных в элемент <object>.
+    Недостатки:
+    1. Не решается проблема адаптации.
+    2. Проблемы с безопасностью.
+    3. Большинство мобильных устройств больше не поддерживают такие плагины, и поддержка на компьютерах также уменьшается. -->
+
+    <iframe src="./images/flag.png" frameborder="0" allowfullscreen width="450" height="300"></iframe>
+
+    <!-- Размещение на странице изображения с помощью тега <iframe>
+    Достоинства: 
+    1. Отлично подходит для включения стороннего контента на сайт, который, возможно, не имеет прямого контроля.
+    2. Поддерживается всеми браузерами.
+    Недостатки:
+    1. Не решается проблема адаптации.
+    2. Серьёзная проблема с безопасностью, поэтому с его помощью вставляется только сторонний контент и только тогда, когда это абсолютно необходимо. -->
+
 </body>
 
 </html>
