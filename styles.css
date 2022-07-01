@@ -1,0 +1,222 @@
+/* Homework 6a - LINKS */
+
+/* ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.links-inline a {
+    color: green;
+    padding: 5px 10px 10px 10px;
+    border-right: solid red 3px;
+    background-color: beige;
+}
+
+.links-inline li {
+    display: inline;    
+} */
+
+/* Links are arranged in a line by setting the li display property to inline, the delimiters are made
+setting the border-right property for the link. Advantages - elements are arranged horizontally, removed
+unnecessary list markers. Disadvantage - it is not possible to set the same width of links. */
+
+/* .links-inline-block li {
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    border-right: solid red 3px;
+    padding: 5px 0 10px 0;
+    background-color: beige;
+}
+
+.links-inline-block a {
+    color: green;
+    padding: 5px 10px 10px 10px;    
+} */
+
+/* Links are arranged in a line by setting the li display property to inline-block , separators are made
+by setting the border-right property on li. Advantages - elements are arranged horizontally, removed
+unnecessary list markers, it becomes possible to set the same width of links. */
+
+/* .links-float ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.links-float li {
+    float: left;
+    border-right: solid red 3px;
+    width: 140px;
+    text-align: center;
+    background-color: beige;
+}
+
+.links-float a {
+    color: green;
+    display: inline-block;
+    padding: 5px 10px 10px 10px;    
+} */
+
+/* Links are arranged in a string by setting the li property to float with a value of left, the separators are 
+made by setting the border-right property on li. Advantages - elements are arranged horizontally, it becomes 
+possible to set the same width of links, gaps between links disappear. Disadvantages - that we need to 
+additionally remove the list markers, the height of the ul container block becomes zero, we need to add 
+{overflow: hidden;} for ul, besides, if this is not done, the next element will become one line with the menu. */
+
+/* .links-flex ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.links-flex li {
+    border-right: solid red 3px;
+    width: 140px;
+    text-align: center;
+}
+
+.links-flex a {
+    display: block;
+    color: green;
+    padding: 5px 10px 10px 10px;
+    background-color: beige;
+} */
+
+/* Links are laid out in a line by setting the li display property to flex , the separators are made
+setting the border-right property of li. Advantages - elements are arranged horizontally, it becomes 
+possible to set the same width of links without gaps between them and the disadvantages of floating elements. */
+
+/* a:hover {
+    color: red;
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6b - CSS_CHESS */
+
+/* table.CHESS {
+    border-collapse: collapse;
+}
+
+table.CHESS td {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+}
+
+table.CHESS tr:first-child td {
+    height: 20px;
+    background-color: #90ee90 !important;
+}
+
+table.CHESS tr:last-child td {
+    height: 20px;
+    background-color: #90ee90 !important;
+}
+
+table.CHESS td:first-child {
+    width: 20px;
+    background-color: #90ee90 !important;
+}
+
+table.CHESS td:last-child {
+    width: 20px;
+    background-color: #90ee90 !important;
+}
+
+table.CHESS tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+}
+
+table.CHESS tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6c (first) */
+
+/* h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+p:first-of-type {
+    color: green;
+}
+
+p:first-of-type+p {
+    color: red;
+}
+
+p:first-of-type+p~p {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+a:first-of-type::before {
+    content: url('./images/extref.png')
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6c (second) */
+
+/* h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+p:first-of-type {
+    color: green;
+}
+
+p:first-of-type+p {
+    color: red;
+}
+
+p:first-of-type+p~p {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6d */
+
+.wrapper {
+    overflow: hidden;
+}
+
+.star0 {
+    overflow: hidden;
+    float: left;
+}
+
+.star1 {
+    background: url('./images/star0.png');
+    width: 78px;
+    height: 78px;
+    float: right;
+}
+
+.star1:hover,
+.star1:hover~.star1 {
+    background: url('./images/star1.png');
+}
