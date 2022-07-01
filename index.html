@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="img">
+        <img srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
+            sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw" src="./images/flag.png" alt="flag">
+    </div>
+
+    <!-- Placing an image on a page using the <img> tag
+    Advantages:
+    1. Allows you to embed an image file into a document.
+    2. Supports jpeg, gif, png, svg, bmp, bmp ico, png ico image formats.
+    3. Sets a textual description of the image for non-graphical browsers.
+    4. It is possible to improve page loading performance by using the loading attribute.
+    5. It is possible to show images of different sizes when the resolution is changed.
+    Flaws:
+    1. The problem of graphic orientation, displaying a landscape, portrait or other version of the image when changing is not solved
+    screen sizes.
+    2. Not used with partially supported image types. -->
+
+    <picture>
+        <source media="(orientation: landscape)" srcset="./images/flag.png 450w, ./images/flag-1200w.png 1200w"
+            sizes="(min-width: 1280px) 1200px, (min-width: 768px) 450px, 100vw">
+        <source media="(orientation: portrait)" srcset="./images/flag-300w.png 300w, ./images/flag-800w.png 800w"
+            sizes="(min-width: 880px) 800px, (min-width: 350px) 300px, 100vw">
+        <img src="./images/flag.png" alt="flag">
+    </picture>
+
+    <!-- Placing an image on a page using the <picture> tag
+     Advantages: all the advantages of placing with the <img> tag, plus:
+     1. The problem of graphics orientation, displaying a landscape, portrait or other version of the image when changing is solved
+     screen sizes.
+     2. Used with partially supported image types, such as webp and avif.
+     Flaws:
+     1. More complex notation. If there is no need to adapt the image, its use is inefficient. -->
+
+    <div class="object">
+        <object data="./images/flag.png"></object>
+    </div>
+
+    <!-- Placing an image on the page using the <object> tag
+     Advantages:
+     1. A universal way to embed multimedia content into a page.
+     2. May contain multiple <param> elements that are used to define parameters for plugins embedded within the <object> element.
+     Flaws:
+     1. The problem of adaptation is not solved.
+     2. Security issues.
+     3. Most mobile devices no longer support such plug-ins, and support on computers is also declining. -->
+
+    <iframe src="./images/flag.png" frameborder="0" allowfullscreen width="450" height="300"></iframe>
+
+    <!-- Placing an image on a page using the <iframe> tag
+     Advantages:
+     1. Great for including third party content on a site that may not have direct control.
+     2. Supported by all browsers.
+     Flaws:
+     1. The problem of adaptation is not solved.
+     2. Serious security issue, so it only inserts third-party content and only when absolutely necessary. -->
+
+</body>
+
+</html>

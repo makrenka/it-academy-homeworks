@@ -1,0 +1,14 @@
+img:hover {
+    width: 100%;
+    height: auto;
+}
+
+object:hover {
+    width: 100%;
+    height: auto;
+}
+
+iframe:hover {
+    width: 100%;
+    height: auto;
+}
