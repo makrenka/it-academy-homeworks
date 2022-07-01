@@ -94,42 +94,74 @@ possible to set the same width of links without gaps between them and the disadv
 
 /* Homework 6b - CSS_CHESS */
 
-table.CHESS
-  {
+/* table.CHESS {
     border-collapse: collapse;
-  }
+}
 
-  table.CHESS td
-  {
+table.CHESS td {
     width: 50px;
     height: 50px;
     border: solid gray 1px;
-  }
+}
 
-  table.CHESS tr:first-child td {    
+table.CHESS tr:first-child td {
     height: 20px;
     background-color: #90ee90 !important;
-  }
+}
 
-  table.CHESS tr:last-child td {    
+table.CHESS tr:last-child td {
     height: 20px;
     background-color: #90ee90 !important;
-  }
+}
 
-  table.CHESS td:first-child {
-    width: 20px;  
-    background-color: #90ee90 !important;  
-  }
+table.CHESS td:first-child {
+    width: 20px;
+    background-color: #90ee90 !important;
+}
 
-  table.CHESS td:last-child {
-    width: 20px; 
-    background-color: #90ee90 !important;   
-  }
+table.CHESS td:last-child {
+    width: 20px;
+    background-color: #90ee90 !important;
+}
 
-  table.CHESS tr:nth-child(odd) td:nth-child(even) {
+table.CHESS tr:nth-child(odd) td:nth-child(even) {
     background-color: black;
-  }
+}
 
-  table.CHESS tr:nth-child(even) td:nth-child(odd) {
+table.CHESS tr:nth-child(even) td:nth-child(odd) {
     background-color: black;
-  }
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6c (first) */
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+p:first-of-type {
+    color: green;
+}
+
+p:first-of-type+p {
+    color: red;
+}
+
+p:first-of-type+p~p {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+a:first-of-type::before {
+    content: url('./images/extref.png')
+}
