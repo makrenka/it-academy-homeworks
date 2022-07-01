@@ -170,7 +170,7 @@ a:first-of-type::before {
 
 /* Homework 6c (second) */
 
-h3 {
+/* h3 {
     margin-bottom: 0;
 }
 
@@ -194,4 +194,29 @@ a {
     text-decoration: none;
     color: blue;
     font-weight: bold;
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6d */
+
+.wrapper {
+    overflow: hidden;
+}
+
+.star0 {
+    overflow: hidden;
+    float: left;
+}
+
+.star1 {
+    background: url('./images/star0.png');
+    width: 78px;
+    height: 78px;
+    float: right;
+}
+
+.star1:hover,
+.star1:hover~.star1 {
+    background: url('./images/star1.png');
 }
