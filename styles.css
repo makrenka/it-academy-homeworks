@@ -225,5 +225,5 @@ img:hover {
 
 .wrapper:hover .border {
     animation: border1 2s infinite,
-    border2 2s infinite;    
+        border2 2s infinite;
 }
