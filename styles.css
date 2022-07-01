@@ -136,7 +136,7 @@ table.CHESS tr:nth-child(even) td:nth-child(odd) {
 
 /* Homework 6c (first) */
 
-h3 {
+/* h3 {
     margin-bottom: 0;
 }
 
@@ -164,4 +164,34 @@ a {
 
 a:first-of-type::before {
     content: url('./images/extref.png')
+} */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Homework 6c (second) */
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+p:first-of-type {
+    color: green;
+}
+
+p:first-of-type+p {
+    color: red;
+}
+
+p:first-of-type+p~p {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
 }
