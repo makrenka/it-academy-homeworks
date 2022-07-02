@@ -29,17 +29,20 @@
             <div class="form-element">
                 <div class="form-element__title">Публикация:</div>
                 <div class="form-element__radio">
-                    <input type="radio" name="place" value="1">на сайте
-                    <input type="radio" name="place" value="2">в журнале
-                    <input type="radio" name="place" value="1">на сайте и в журнале
+                    <div class="form-element__radio-input"><input type="radio" name="place" value="1">на сайте</div>
+                    <div class="form-element__radio-input"><input type="radio" name="place" value="2">в журнале</div>
+                    <div class="form-element__radio-input"><input type="radio" name="place" value="1">на сайте и в
+                        журнале</div>
                 </div>
             </div>
             <div class="form-element">
                 <div class="form-element__title">Разрешить комментарии:</div>
-                <input type="checkbox" name="permit-comments" checked>
+                <div class="form-element__checkbox"><input type="checkbox" name="permit-comments" checked></div>
             </div>
             Текст статьи: <br>
-            <input type="text" name="article-text">
+            <div class="form__article-text">
+                <textarea class="form__article-text-textarea" name="article-text" rows="3"></textarea>
+            </div>
         </form>
     </div>
 </body>

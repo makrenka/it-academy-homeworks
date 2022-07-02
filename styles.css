@@ -8,6 +8,7 @@ p {
 
 .form-element {
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .form-element__title {
@@ -18,7 +19,7 @@ p {
 
 .form-element__article-title {
     margin-left: 200px;
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 
 .form-element__article-title input {
@@ -35,11 +36,37 @@ p {
     padding-top: 1px;
 }
 
-@media screen and (max-width: 500px) {
+.form-element__radio-input {
+    float: left;
+}
+
+.form-element__checkbox {
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+.form__article-text {
+    margin-right: 8px;
+}
+
+.form__article-text-textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 590px) {
     .form-element__article-title {
         margin-left: 0;
     }
+
     .form-element__subject {
         width: 100%;
+    }
+
+    .form-element__radio {
+        margin-top: 25px;
+    }
+
+    .form-element__radio-input {
+        float: none;
     }
 }
