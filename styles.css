@@ -2,7 +2,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+/* Homework 8a - MAKET_FORM */
+
+/* p {
     margin-bottom: 20px;
 }
 
@@ -69,4 +71,46 @@ p {
     .form-element__radio-input {
         float: none;
     }
+} */
+
+/* -------------------------------------------------------------------- */
+
+/* Homework 8b - MAKET_ABS */
+
+.images {
+    position: relative;
+    height: 360px;
+}
+
+.images__wrapper {
+    position: relative;
+    left: 37%;
+    top: 12%;
+}
+
+.images__No_smoking {
+    position: absolute;
+    z-index: 1;
+}
+
+.images__biohazard {
+    position: absolute;
+    left: -80px;
+    top: -40px;
+}
+
+.images__Man-and-woman {
+    position: absolute;
+    left: 140px;
+    top: -60px;
+}
+
+.images__Yin_and_Yang {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.images img:hover {
+    z-index: 2;
 }
