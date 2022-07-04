@@ -66,7 +66,11 @@ img:hover {
 
 /* Homework 9c */
 
-/* .img-flag:hover {
+/* figure {
+    margin: 0;
+}
+
+.img-flag:hover {
     width: 100%;
     height: auto;
 }
