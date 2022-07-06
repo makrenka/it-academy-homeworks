@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Homework 8a - MAKET_FORM */
+
+/* p {
+    margin-bottom: 20px;
+}
+
+.form-element {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.form-element__title {
+    width: 200px;
+    float: left;
+    padding-top: 3px;
+}
+
+.form-element__article-title {
+    margin-left: 200px;
+    margin-right: 8px;
+}
+
+.form-element__article-title input {
+    width: 100%;
+}
+
+.form-element__subject {
+    width: 200px;
+    height: 25px;
+    font-size: 14px;
+}
+
+.form-element__radio {
+    padding-top: 1px;
+}
+
+.form-element__radio-input {
+    float: left;
+}
+
+.form-element__checkbox {
+    margin-bottom: 10px;
+    padding-top: 3px;
+}
+
+.form__article-text {
+    margin-right: 8px;
+}
+
+.form__article-text-textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 590px) {
+    .form-element__article-title {
+        margin-left: 0;
+    }
+
+    .form-element__subject {
+        width: 100%;
+    }
+
+    .form-element__radio {
+        margin-top: 25px;
+    }
+
+    .form-element__radio-input {
+        float: none;
+    }
+} */
+
+/* -------------------------------------------------------------------- */
+
+/* Homework 8b - MAKET_ABS */
+
+.images {    
+    height: 360px;
+}
+
+.images__wrapper {
+    position: relative;
+    left: 37%;
+    top: 12%;
+}
+
+.images__No_smoking {
+    position: absolute;
+    z-index: 1;
+}
+
+.images__biohazard {
+    position: absolute;
+    left: -80px;
+    top: -40px;
+}
+
+.images__Man-and-woman {
+    position: absolute;
+    left: 140px;
+    top: -60px;
+}
+
+.images__Yin_and_Yang {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.images img:hover {
+    z-index: 2;
+}
